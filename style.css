@@ -1,0 +1,228 @@
+/* 
+============ global ============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.title-svg,
+.restaurant-title,
+.header-links,
+.footer-svg {
+  opacity: .7;
+}
+
+.background-img-title,
+.background-img-text {
+  color: rgba(255, 255, 255, .9);
+}
+
+
+.footer-img-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* 
+============ typography ============
+*/
+
+body {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing-one {
+  letter-spacing: 1px;
+}
+
+.letter-spacing-two {
+  letter-spacing: 2px;
+}
+
+.header-links {
+  font-size: 1.25em;
+}
+
+.footer-img-text {
+  font-size: 1.25rem;
+}
+
+/* 
+============ main-content ============
+*/
+
+  /* -- main -- */
+
+.background-img-one {
+  background-image: url(./img/pizza.jpg);
+  background-size: cover;
+  background-position: center;
+
+/*used with background-img-one::after in order
+to change the opacity of the background-img
+without affecting everything else */
+
+  position: relative;
+  isolation: isolate;
+}
+
+/*used with background-img-one (position and isolation)
+in order to change the opacity of the
+background-img without affecting everything else */
+
+.background-img-one::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: black;
+  opacity: .6;
+}
+
+    /* -- header -- */
+
+.background-img-header-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title-svg {
+  width: 3em;
+}
+
+.restaurant-title {
+  margin-left: .25em;
+  align-self: center;
+}
+
+.header-links {
+  display: block;
+  margin: .5em .5em 0 .5em;
+}
+
+    /* -- h1 and p -- */
+
+.hp-container {
+  margin: 5em 0;
+}    
+
+.background-img-title,
+.background-img-text {
+  text-align: center;
+  opacity: .9;
+}
+
+    /* -- footer -- */
+
+.background-img-footer-container {
+  background-color: rgba(0, 0, 0, .4);
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.footer-img-text {
+  text-align: center;
+}
+
+.footer-svg {
+  width: 1.5em;
+  margin: 0 1em;
+}
+
+  /* -- section container -- */
+
+.section-container {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.about-us-title {
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* 
+============ media-queries ============
+*/
+
+@media (min-width: 650px) {
+  
+  .background-img-header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5em 3em;
+  }
+
+  .header-links {
+    margin: 0 0 0 3em;
+  }
+
+  .hp-container {
+    margin: 8em 0;
+  }    
+
+  .background-img-footer-container {
+    padding: .5em;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  .background-img-header-container {
+    padding: .5em 9em;
+  }
+
+}
