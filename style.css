@@ -231,14 +231,15 @@ background-img without affecting everything else */
 }
 
 .footer-links {
-  margin: 1em;
+  display: block;
+  margin: .5em .5em 0 .5em;
 }
 
 /* 
 ============ media-queries ============
 */
 
-@media (min-width: 650px) {
+@media (min-width: 670px) {
   
   .background-img-header-container {
     flex-direction: row;
@@ -267,11 +268,17 @@ background-img without affecting everything else */
     grid-column: span 2/ auto;
   }
 
-.footer-links {
+  .footer-banner {
     flex-direction: row;
-    margin-left: 3em;
-  } 
-  
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+  }
+
+  .footer-link-container {
+    gap: 1em;
+  }
+
 }
 
 @media (min-width: 1000px) {
