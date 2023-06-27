@@ -230,7 +230,7 @@ background-img without affecting everything else */
 }
 
 .footer-links {
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 /* 
@@ -266,6 +266,10 @@ background-img without affecting everything else */
     grid-column: span 2/ auto;
   }
 
+.footer-links {
+    margin-left: 3em;
+  } 
+  
 }
 
 @media (min-width: 1000px) {
