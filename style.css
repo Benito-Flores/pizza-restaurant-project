@@ -10,7 +10,7 @@
 
 body {
   color: white;
-  background-color: black;
+  background-color: #0f0f0f;
 }
 
 li {
@@ -64,7 +64,7 @@ h3 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 a {
@@ -127,7 +127,7 @@ background-img without affecting everything else */
   opacity: .6;
 }
 
-    /* -- header -- */
+  /* -- header -- */
 
 .background-img-header-container {
   flex-direction: column;
@@ -151,7 +151,7 @@ background-img without affecting everything else */
   margin: .5em .5em 0 .5em;
 }
 
-    /* -- h1 and p -- */
+  /* -- h1 and p -- */
 
 .hp-container {
   margin: 5em 0;
@@ -163,7 +163,7 @@ background-img without affecting everything else */
   opacity: .9;
 }
 
-    /* -- footer -- */
+  /* -- footer -- */
 
 .background-img-footer-container {
   background-color: rgba(0, 0, 0, .4);
@@ -181,16 +181,50 @@ background-img without affecting everything else */
   margin: 0 1em;
 }
 
-  /* -- section container -- */
+  /* -- about us container -- */
 
-.section-container {
+.about-us-container {
+  text-align: center;
   width: 98%;
   margin: 0 auto;
 }
 
 .about-us-title {
+  padding: 1em;
+}
+
+.about-us-text {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+  /* -- gallery container -- */
+
+.gallery-container {
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+  padding-bottom: 5em;
+}
+
+.gallery-title {
   text-align: center;
-  padding: 1em 0;
+  padding: 1em;
+}
+
+
+/* grid container for photos */
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 140px;
+}
+
+.footer {
+  padding: 1em;
+  background-color: rgba(211, 95, 0, 0.5);
 }
 
 /* 
@@ -215,6 +249,15 @@ background-img without affecting everything else */
 
   .background-img-footer-container {
     padding: .5em;
+  }
+
+/* css grid stuff */  
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+  
+  .card-wide {
+    grid-column: span 2/ auto;
   }
 
 }
