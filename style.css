@@ -223,6 +223,7 @@ background-img without affecting everything else */
 }
 
 .footer-banner {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
@@ -267,6 +268,7 @@ background-img without affecting everything else */
   }
 
 .footer-links {
+    flex-direction: row;
     margin-left: 3em;
   } 
   
