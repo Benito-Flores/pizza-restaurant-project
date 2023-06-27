@@ -226,7 +226,11 @@ background-img without affecting everything else */
   justify-content: center;
   align-items: center;
   padding: 1em;
-  background-color: rgba(211, 95, 0, 0.5);
+  background-color: #1c1c1c;
+}
+
+.footer-links {
+  margin-left: 1em;
 }
 
 /* 
