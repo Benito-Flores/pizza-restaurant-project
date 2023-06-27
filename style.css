@@ -124,7 +124,7 @@ background-img without affecting everything else */
   z-index: -1;
   inset: 0;
   background: black;
-  opacity: .4;
+  opacity: .3;
 }
 
   /* -- header -- */
@@ -160,7 +160,6 @@ background-img without affecting everything else */
 .background-img-title,
 .background-img-text {
   text-align: center;
-  opacity: .9;
 }
 
   /* -- footer -- */
