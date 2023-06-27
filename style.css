@@ -124,7 +124,7 @@ background-img without affecting everything else */
   z-index: -1;
   inset: 0;
   background: black;
-  opacity: .8;
+  opacity: .6;
 }
 
     /* -- header -- */
