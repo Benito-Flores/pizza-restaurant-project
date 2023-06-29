@@ -135,7 +135,7 @@ background-img without affecting everything else */
   justify-content: center;
   align-items: center;
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .title-svg {
@@ -166,7 +166,7 @@ background-img without affecting everything else */
   /* -- footer -- */
 
 .background-img-footer-container {
-  background-color: rgba(0, 0, 0, .4);
+  background-image: linear-gradient(to top, #0000007a 75%, rgba(0, 0, 0, 0));
   justify-content: center;
   align-items: center;
   padding: 1em 0;
